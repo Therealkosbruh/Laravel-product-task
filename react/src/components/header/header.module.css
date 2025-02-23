@@ -1,0 +1,153 @@
+  .header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .tabs {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .rightSection {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .tab {
+    background: none;
+    border: none;
+    color: gray;
+    font-size: 14px;
+    cursor: pointer;
+    transition: color 0.3s ease, font-size 0.3s ease;
+  }
+  
+  .tab.active {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .addButton {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .addButton:hover {
+    background-color: darkgreen;
+  }
+  
+  .icon {
+    fill: white;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .icon:hover {
+    transform: scale(1.2);
+  }
+  
+  .filterPanel {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow-y: auto;
+    z-index: 9999999;
+  }
+  
+  .filterContent {
+    width: 100%;
+    max-width: 250px;
+  }
+  
+  h3 {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  .filterGroup {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+  
+  .selectInput,
+  .input {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    color: black;
+  }
+  
+  .selectInput {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .input {
+    background-color: #fff;
+  }
+  
+  .filterActions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .applyButton,
+  .clearButton {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .applyButton:hover,
+  .clearButton:hover {
+    background-color: darkgreen;
+  }
+  
+  .closeButton {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .closeButton:hover {
+    color: red;
+  }
+  
